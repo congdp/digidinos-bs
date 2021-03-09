@@ -1,0 +1,46 @@
+  body {
+      background-color: #f5f5f5 !important;
+  }
+  
+  select.list-option {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      appearance: none;
+      outline: 0;
+      box-shadow: none;
+      border: 0 !important;
+      background: #fff;
+      background-image: none;
+      flex: 1;
+      padding: 0 1em;
+      cursor: pointer;
+  }
+  
+  .select {
+      position: relative;
+      display: flex;
+      line-height: 1.9;
+      background: #fff;
+      overflow: hidden;
+  }
+  
+  .select::after {
+      content: '\25BC';
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0 6px;
+      background: grey;
+      border: 1px solid #000;
+      cursor: pointer;
+      pointer-events: none;
+      -webkit-transition: 0.25s all ease;
+      -o-transition: 0.25s all ease;
+      transition: 0.25s all ease;
+  }
+  
+  .wp-table {
+      height: 400px;
+      overflow-y: scroll;
+  }
