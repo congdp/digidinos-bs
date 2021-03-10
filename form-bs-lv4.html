@@ -1,310 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css" />
-    <link
-      rel="stylesheet"
-      href="owlcarousel/assets/owl.theme.default.min.css"
-    />
-    <link rel="stylesheet" href="css/detail.css" />
-    <script src="js/jquery.min.js"></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
-    <script src="js/app.js"></script>
-    <link rel="stylesheet" href="fontawesome/css/all.css" />
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-    <title></title>
-  </head>
 
-  <body>
-    <div id="wrapper">
-      <div id="wp-form" class="bg-white px-4 pb-4 pt-2">
-        <h3 class="mb-4">時間</h3>
-        <div id="box-form" class="overflow-hidden rounded">
-          <form action="">
-            <div class="row p-3" style="background-color: #d5d5d5">
-              <div class="col-md-4">
-                <div class="form-group mb-2 row">
-                  <label
-                    for="inputDate1"
-                    class="col-md-2 col-form-label col-form-label-sm"
-                    >時間</label
-                  >
-                  <div class="col-md-4">
-                    <input
-                      type="date"
-                      class="form-control form-control-sm"
-                      id="inputDate1"
-                      placeholder=""
-                    />
-                  </div>
-                  <label for="inputDate2" class="">~</label>
-                  <div class="col-sm-4">
-                    <input
-                      type="date"
-                      class="form-control form-control-sm"
-                      id="inputDate2"
-                      placeholder=""
-                    />
-                  </div>
-                </div>
-                <div class="form-group mb-2 row">
-                  <label
-                    for="inputDate1"
-                    class="col-md-2 col-form-label col-form-label-sm"
-                    >時間</label
-                  >
-                  <div class="col d-flex">
-                    <div class="select">
-                      <select name="" id="" class="list-option">
-                        <option value=""></option>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link href="/bai2.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
 
-                        <option value="">sdsdsdsd</option>
-                      </select>
+<body>
+  <style>
+.card {
+   margin-top: 1%;
+}
+
+.table>:not(caption)>*>* {
+    padding: 0;
+}
+
+
+body {
+    background-color: #f4f7fc;
+}
+#header{
+  background-color: #153d77;
+   height: 150px;
+}
+
+.input-group {
+  margin-bottom: 7px;
+}
+label{
+  padding-left: 10px;
+  padding-right: 20px;
+}
+.headertable {
+    width: 100%;
+    height: 50px;
+}
+.row2{
+    margin-top: 10%;
+}
+.dropdown-toggle-split::after{
+  margin-left: 0;
+    padding: 0px 0px 4px 0px;
+    color: #000;
+}
+input , button {
+  height: 26px !important;
+}
+button{
+  border-radius: 4px !important;
+}
+#wp-table{
+    overflow-y: scroll;
+    height: 500px;
+}
+  </style>
+    <header id="header"></header>
+    <div class="container-fluid w-100" style=" left: 0; top: 0;  position: absolute; ">
+        <div class="card">
+            <b class="card-title ml-2" style="margin-left: 20px; margin-top: 1%;">XXXXX</b>
+            <div class="card-body" >
+                <!-- <div id="wp-form"> -->
+                  <form>
+                    <div class="form-group" style="background-color: #e9ecef;">
+                        <!-- dòng 1 -->
+                        <div class="row pt-3">
+                            <!-- cột 1 -->
+                            <div class="col">
+                              <label  for="" class="pl-2">xxxxx</label>
+                                <input type="date">~<input type="date" style="width: 36%;">
+                            </div>
+                            <!-- cột 2 -->
+                            <div class="col mb-1" >
+                                <div class="input-group mb-1">
+                                    <label for="">xxxxxx</label>
+                                    <input type="text" class="bg-white" style="width: 10%; border: 2px black solid; height: 30px;"></input>
+                                    <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                    </ul>
+                                    <input type="text" aria-label="Text input with segmented dropdown button" style="width: 20%;height: 30px;" disabled>
+                                     <label for="">xxxxxx</label>
+                                    <input type="text" class="btn btn-outline-secondary bg-white" style="width: 10%; border: 2px black solid; height: 30px;"></input>
+                                    <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                    </ul>
+                                    <input type="text" aria-label="Text input with segmented dropdown button" style="width: 11%;height: 30px;" disabled>
+                                </div>
+                            </div>
+                            <!-- cột 3 -->
+                            <div class="col" style="">
+                                <label for="">xxxxxx</label>
+                                <input type="text" aria-label="Text input with segmented dropdown button" style=" width: 60%;;height: 30px;">
+                            </div>
+                        </div>
+                        <!-- dòng 2 -->
+                        <div class="row" style="margin-top: 0;">
+                             <!-- cột 1 -->
+                            <div class="col">
+                                <div class="input-group">
+                                     <label for="">xxxxxx</label>
+                                    <input type="text" class="btn btn-outline-secondary bg-white" style="width: 20%; border: 2px black solid; height: 30px;"></input>
+                                    <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                    </ul>
+                                    <input type="text" aria-label="Text input with segmented dropdown button"  disabled>
+                                </div>
+                            </div>
+                             <!-- cột 2 -->
+                            <div class="col">
+                                <div class="input-group">
+                                     <label for="">xxxxxx</label>
+                                    <input type="text" class="btn btn-outline-secondary bg-white" style="width: 10%; border: 2px black solid; height: 30px;"></input>
+                                    <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                    </ul>
+                                    <input type="text" aria-label="Text input with segmented dropdown button" style="width: 64%;height: 30px;" disabled>
+                                </div>
+                            </div> 
+                            <!-- cột 3 -->
+                            <div class="col">
+                                <label for="">xxxxxx</label>
+                              <input type="text" aria-label="Text input with segmented dropdown button" style="width: 60%;height: 30px;">
+                            </div>
+                        </div>
+                        <!-- dòng 3 -->
+                        <div class="row" style="margin-top: 0;">
+                             <!-- cột 1 -->
+                            <div class="col" >
+                                <div class="input-group">
+                                     <label for="">xxxxxx</label>
+                                    <input type="text" class="btn btn-outline-secondary bg-white" style="width: 20%; border: 2px black solid; height: 30px;"></input>
+                                    <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                    </ul>
+                                    <input type="text" aria-label="Text input with segmented dropdown button"  disabled>
+                                </div>
+                            </div>
+                             <!-- cột 2 -->
+                            <div class="col">
+                                <div class="input-group">
+                                    <label for="">xxxxxx</label>
+                                    <input type="text" class="btn btn-outline-secondary bg-white" style="width: 10%; border: 2px black solid; height: 30px;"></input>
+                                    <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                    </ul>
+                                    <input type="text" aria-label="Text input with segmented dropdown button" style="width: 64%;height: 30px;" disabled>
+                                </div>
+                            </div>
+                             <!-- cột 3 -->
+                            <div class="col">
+                                <div class="input-group">
+                                   <label for="" style="margin-right: 5px;"> xxxxxx</label>
+                                    <input type="text" class="btn btn-outline-secondary bg-white" style="width: 15%; border: 2px black solid; height: 30px; margin-left: 0;"></input>
+                                    <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                    </ul>
+                                    <input type="text" aria-label="Text input with segmented dropdown button" style="width: 42%;height: 30px;" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- dòng 4 -->
+                        <div class="row pb-2" >
+                             <!-- cột 1 -->
+                            <div class="col" >
+                                <div class="input-group mb-1">
+                                  <label for="">xxxxxx</label>
+                                    <input type="text" class="btn btn-outline-secondary bg-white" style="width: 20%; border: 2px black solid; height: 30px;"></input>
+                                    <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                    </ul>
+                                    <input type="text" aria-label="Text input with segmented dropdown button" style="width: 50%;height: 30px;" disabled>
+                                </div>
+                            </div>
+                             <!-- cột 2 -->
+                            <div class="col-2">
+                                <label style="padding-right: 14px;" for="">xxxxxx</label>
+                                <input type="text" aria-label="Text input with segmented dropdown button" style="height: 30px;width: 60%;">
+                            </div>
+                             <!-- cột 3 -->
+                            <div class="col-2">
+                                <label for="">xxxxxx</label>
+                               <input type="text" aria-label="Text input with segmented dropdown button" style="height: 30px; width: 58%;">
+                            </div>
+                            <div class="col">
+                            </div>
+                        </div>
                     </div>
-                    <input type="text" />
-                  </div>
-                </div>
-                <div class="form-group mb-2 row">
-                  <label
-                    for="inputDate1"
-                    class="col-md-2 col-form-label col-form-label-sm"
-                    >時間</label
-                  >
-                  <div class="col d-flex">
-                    <div class="select">
-                      <select name="" id="" class="list-option">
-                        <option value=""></option>
-
-                        <option value="">sdsdsdsd</option>
-                      </select>
-                    </div>
-                    <input type="text" />
-                  </div>
-                </div>
-                <div class="form-group mb-0 row">
-                  <label
-                    for="inputDate1"
-                    class="col-md-2 col-form-label col-form-label-sm"
-                    >時間</label
-                  >
-                  <div class="col d-flex">
-                    <div class="select">
-                      <select name="" id="" class="list-option">
-                        <option value=""></option>
-
-                        <option value="">sdsdsdsd</option>
-                      </select>
-                    </div>
-                    <input type="text" />
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="form-group mb-2 row">
-                  <label
-                    for="inputDate1"
-                    class="col-md-2 col-form-label col-form-label-sm"
-                    >時間</label
-                  >
-                  <div class="col-md-4">
-                    <input
-                      type="date"
-                      class="form-control form-control-sm"
-                      id="inputDate1"
-                      placeholder=""
-                    />
-                  </div>
-                  <label for="inputDate2" class="">~</label>
-                  <div class="col-sm-4">
-                    <input
-                      type="date"
-                      class="form-control form-control-sm"
-                      id="inputDate2"
-                      placeholder=""
-                    />
-                  </div>
-                </div>
-                <div class="form-group mb-2 row">
-                  <label
-                    for="inputDate1"
-                    class="col-md-2 col-form-label col-form-label-sm"
-                    >時間</label
-                  >
-                  <div class="col d-flex">
-                    <div class="select">
-                      <select name="" id="" class="list-option">
-                        <option value=""></option>
-
-                        <option value="">sdsdsdsd</option>
-                      </select>
-                    </div>
-                    <input type="text" />
-                  </div>
-                </div>
-                <div class="form-group mb-2 row">
-                  <label
-                    for="inputDate1"
-                    class="col-md-2 col-form-label col-form-label-sm"
-                    >時間</label
-                  >
-                  <div class="col d-flex">
-                    <div class="select">
-                      <select name="" id="" class="list-option">
-                        <option value=""></option>
-
-                        <option value="">sdsdsdsd</option>
-                      </select>
-                    </div>
-                    <input type="text" />
-                  </div>
-                </div>
-                <div class="form-group mb-2 row">
-                  <label
-                    for="inputDate1"
-                    class="col-md-2 col-form-label col-form-label-sm"
-                    >時間</label
-                  >
-                  <div class="col-md-4">
-                    <input
-                      type="text"
-                      class="form-control form-control-sm"
-                      id="inputDate1"
-                      placeholder=""
-                    />
-                  </div>
-                  <label for="inputDate2" class="">~</label>
-                  <div class="col-sm-4">
-                    <input
-                      type="text"
-                      class="form-control form-control-sm"
-                      id="inputDate2"
-                      placeholder=""
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="form-group mb-2 row">
-                  <label
-                    for="inputDate1"
-                    class="col-md-2 col-form-label col-form-label-sm"
-                    >時間</label
-                  >
-                  <div class="col-md-4">
-                    <input
-                      type="date"
-                      class="form-control form-control-sm"
-                      id="inputDate1"
-                      placeholder=""
-                    />
-                  </div>
-                  <label for="inputDate2" class="">~</label>
-                  <div class="col-sm-4">
-                    <input
-                      type="date"
-                      class="form-control form-control-sm"
-                      id="inputDate2"
-                      placeholder=""
-                    />
-                  </div>
-                </div>
-                <div class="form-group mb-2 row">
-                  <label
-                    for="inputDate1"
-                    class="col-md-2 col-form-label col-form-label-sm"
-                    >時間</label
-                  >
-                  <div class="col d-flex">
-                    <div class="select">
-                      <select name="" id="" class="list-option">
-                        <option value=""></option>
-
-                        <option value="">sdsdsdsd</option>
-                      </select>
-                    </div>
-                    <input type="text" />
-                  </div>
-                </div>
-                <div class="form-group mb-2 row">
-                  <label
-                    for="inputDate1"
-                    class="col-md-2 col-form-label col-form-label-sm"
-                    >時間</label
-                  >
-                  <div class="col d-flex">
-                    <div class="select">
-                      <select name="" id="" class="list-option">
-                        <option value=""></option>
-
-                        <option value="">sdsdsdsd</option>
-                      </select>
-                    </div>
-                    <input type="text" />
-                  </div>
-                </div>
-              </div>
+                </form>
             </div>
-          </form>
+        </div>    
+        <div class="card mt-3" style="height: 700px;">
+            <div class="card-body ">
+                <div class="">
+                    <label>XXXXX</label>
+                    <input type="text" class="" style="width: 100px;" disabled>
+                    <label >XXXXX</label>
+                    <select name="" id="">
+                      <option value=""></option>
+                      <option value="">dsdsds</option>
+                    </select>
+                    </div>
+                    <!-- bảng -->
+                <div id="wp-table">
+                  <table class="table" style="margin-top: 10px;">
+                    <thead style="background-color: #c1e2fc;">
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">XXXX</th>
+                            <th scope="col">XXXXXXX</th>
+                            <th scope="col">XXXXXX</th>
+                            <th scope="col">XXXXXX</th>
+                            <th scope="col">XXXXX</th>
+                            <th scope="col">XXXX</th>
+                            <th scope="col">XXXXX</th>
+                            <th scope="col">XXXX</th>
+                            <th scope="col">XXXXX</th>
+                            <th scope="col">XXXX</th>
+                            <th scope="col">XXXXXX</th>
+                            <th scope="col">XXXX</th>
+                            <th scope="col">XXXX</th>
+                            <th scope="col">XXXXXX</th>
+                            <th scope="col">XX</th>
+                            <th scope="col">XXXXXX</th>
+                            <th scope="col">XXXXX</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div id="wp-show" class="bg-white mt-3 p-4">
-        <div class="row">
-          <form class="col-md-12 mb-2">
-            <label class="mr-5" for="">時間</label>
-            <label for="">時間</label>
-            <input type="text" style="width: 80px" />
-            <label for="">時間</label>
-            <select name="" id="" style="height: 30px">
-              <option value=""></option>
-              <option value="">aaaaaaa</option>
-            </select>
-          </form>
-          <div class="wp-table col-md-12" style="height: 400px">
-            <table class="table">
-              <thead style="background: #48dbfb">
-                <tr>
-                  <th scope="col">時間</th>
-                  <th scope="col">時間</th>
-                  <th scope="col">時間</th>
-                  <th scope="col">時間</th>
-                  <th scope="col">時間</th>
-                  <th scope="col">時間</th>
-                  <th scope="col">時間</th>
-                  <th scope="col">時間</th>
-                  <th scope="col">時間</th>
-                  <th scope="col">時間</th>
-                  <th scope="col">時間</th>
-                  <th scope="col">時間</th>
-                  <th scope="col">時間</th>
-                  <th scope="col">時間</th>
-                  <th scope="col">時間</th>
-                  <th scope="col">時間</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>xxxxx</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
     </div>
-
-    <script src="js/popper.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-  </body>
+</body>
 </html>
